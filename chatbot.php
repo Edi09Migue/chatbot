@@ -49,7 +49,7 @@
                     data: 'text='+$pregunta,
                     success: function(resultAjax){
                         //Agregar la respuesta al chat
-                        $resultform = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header"><p>'+ resultAjax +'</p></div></div>';
+                        $resultform = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header"><p>'+ resultAjax +'°C</p></div></div>';
                         $(".form").append($resultform);
                        // controlar la barra de desplazamiento
                         $(".form").scrollTop($(".form")[0].scrollHeight);
@@ -59,8 +59,8 @@
         });
         //Alerta para el caso de la temperatura fuera del rango 
         setInterval(function(){
-                $pregunta = '¿Cuál es la temperatura del cuarto?';
-                //Inicia el código ajax
+                $pregunta = 'cual es la temperatura del cuarto';
+                //Inicia el código aja
                 $.ajax({
                     url: 'data.php',
                     type: 'POST',
@@ -79,7 +79,8 @@
 
         //Alerta para el caso de la humedad fuera del rango 
         setInterval(function(){
-                $pregunta = '¿Cuál es la humedad del cuarto?';
+                $pregunta = 'cual es la humedad del cuarto';
+                 //Agregar la pregunta al chat
                 //Inicia el código ajax
                 $.ajax({
                     url: 'data.php',

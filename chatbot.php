@@ -44,12 +44,12 @@
                 
                 //Inicia el código ajax
                 $.ajax({
-                    url: 'data.php',
+                    url: 'datos.php',
                     type: 'POST',
                     data: 'text='+$pregunta,
                     success: function(resultAjax){
                         //Agregar la respuesta al chat
-                        $resultform = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header"><p>'+ resultAjax +'°C</p></div></div>';
+                        $resultform = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header"><p>'+ resultAjax +'</p></div></div>';
                         $(".form").append($resultform);
                        // controlar la barra de desplazamiento
                         $(".form").scrollTop($(".form")[0].scrollHeight);
@@ -62,12 +62,12 @@
                 $pregunta = 'cual es la temperatura del cuarto';
                 //Inicia el código aja
                 $.ajax({
-                    url: 'data.php',
+                    url: 'datos.php',
                     type: 'POST',
                     data: 'text='+$pregunta,
                     success: function(resultAjax){
                        console.log("resultAjax",resultAjax);
-                       if(resultAjax >= 25){
+                       if(resultAjax >= "30 °C"){
                            $resultform = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header"><p>'+ 'Alerta temperatura fuera del rango' +'</p></div></div>';
                             $(".form").append($resultform);
                             $(".form").scrollTop($(".form")[0].scrollHeight);
@@ -83,12 +83,12 @@
                  //Agregar la pregunta al chat
                 //Inicia el código ajax
                 $.ajax({
-                    url: 'data.php',
+                    url: 'datos.php',
                     type: 'POST',
                     data: 'text='+$pregunta,
                     success: function(resultAjax){
                        console.log("resultAjax",resultAjax);
-                       if(resultAjax >= 10){
+                       if(resultAjax >= "50 %HR"){
                            $resultform = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header"><p>'+ 'Alerta humedad fuera del rango' +'</p></div></div>';
                             $(".form").append($resultform);
                             $(".form").scrollTop($(".form")[0].scrollHeight);

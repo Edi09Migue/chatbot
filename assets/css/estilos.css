@@ -9,6 +9,7 @@ html,body{
     display: grid;
     height: 100%;
     place-items: center;
+    background-color: #1e1e2f;
 }
 
 ::selection{
@@ -38,7 +39,7 @@ html,body{
     border-top: 0px;
 }
 .wrapper .title{
-    background: #595260;
+    background: #9C27B0;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -70,19 +71,24 @@ html,body{
     line-height: 40px;
     border-radius: 50%;
     font-size: 18px;
-    background: #595260;
+    background: #9C27B0;
 }
 .wrapper .form .inbox .msg-header{
-    max-width: 53%;
+    max-width: 100%;
     margin-left: 10px;
+    margin-top: 10px;
 }
 .form .inbox .msg-header p{
     color: #fff;
-    background: #595260;
+   
     border-radius: 10px;
     padding: 8px 10px;
     font-size: 14px;
-    word-break: break-all;
+    word-break: break-word;
+    margin-top: 16px;
+    overflow-y: auto;
+    width: 100%;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
 }
 .form .user-inbox .msg-header p{
     color: #333;
@@ -115,7 +121,7 @@ html,body{
     transition: all 0.3s ease;
 }
 .typing-field .input-data input:focus{
-    border-color: rgba(0,123,255,0.8);
+    
 }
 .input-data input::placeholder{
     color: #999999;
@@ -137,8 +143,8 @@ html,body{
     opacity: 0;
     pointer-events: none;
     border-radius: 3px;
-    background: #595260;
-    border: 1px solid #595260;
+    background: linear-gradient(to right, #ff7300, #ff3300);
+    border: 1px solid #ff3300;
     transform: translateY(-50%);
     transition: all 0.3s ease;
 }
@@ -147,5 +153,39 @@ html,body{
     pointer-events: auto;
 }
 .typing-field .input-data button:hover{
-    background: #006fef;
+    background: linear-gradient(to right, #ff3c00, #ff0000);
 }
+
+.chatCont {
+    position: center;
+    width: 400px;
+    height: 400px !important;
+    border: 1px solid #dcdcdc;
+    bottom: 65px;
+    right: 0;
+    background: #efe7dd url(../img/bg2.png) repeat;
+    border-top-left-radius: 3px;
+    z-index: 10000;
+  }
+
+  .bot_profile {
+    position: relative;
+    right: 0;
+    margin-top: 0px;
+    text-align: center;
+    width: 400px;
+    z-index: 1000;
+  }
+
+  .bot_p_img {
+    position: absolute;
+    width: 80px;
+    border-radius: 50%;
+    width: 80px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0px 1px 0 rgba(0,0,0,0.16), 0 0px 10px 0 rgba(0,0,0,0.12);
+    margin-top: -42px;
+    margin-left: -46px;
+  }
+  

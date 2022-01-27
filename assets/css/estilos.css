@@ -166,6 +166,7 @@ html,body{
     background: #efe7dd url(../img/bg2.png) repeat;
     border-top-left-radius: 3px;
     z-index: 10000;
+
   }
 
   .bot_profile {
@@ -189,3 +190,9 @@ html,body{
     margin-left: -46px;
   }
   
+  .hd1 {
+    font-size: 50px;
+    font-weight: 100;
+    color: white;
+    margin-left: 88px;
+  }

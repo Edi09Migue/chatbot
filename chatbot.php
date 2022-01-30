@@ -22,7 +22,7 @@
                 <div class="form">
                     <div class="bot-inbox inbox">
                         <div class="msg-header">
-                            <p>Hola, un gusto en saludarte. ¿cómo te ayudo? </p>
+                            <p>Hola, un gusto en saludarte.</p>
                         </div>
                     </div>
                 </div>

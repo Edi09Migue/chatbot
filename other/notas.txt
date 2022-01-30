@@ -10,7 +10,6 @@ P: 1234
 
 
 //Apuntes
-
 https://www.oscarperez.es/problemas-con-las-enes-acentos-y-demas-caracteres-cuando-usas-mysql-y-php/
 
 https://www.youtube.com/watch?v=fB6lbmu-mk0

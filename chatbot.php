@@ -16,7 +16,7 @@
     
                 <div class="bot_profile">
                 
-                    <img src="assets/img/bot2.svg" class="bot_p_img">
+                    <img src="assets/img/bot1.svg" class="bot_p_img">
                 </div>
 
                 <div class="form">

@@ -9,7 +9,8 @@ html,body{
     display: grid;
     height: 100%;
     place-items: center;
-    background-color: #1e1e2f;
+    /* background-color: #1e1e2f; */
+    background-color:  #521d91
 }
 
 ::selection{
@@ -88,7 +89,8 @@ html,body{
     margin-top: 16px;
     overflow-y: auto;
     width: 100%;
-    background: linear-gradient(to right, #00c6ff, #0072ff);
+    /* background: linear-gradient(to right, #00c6ff, #0072ff); */
+    background: linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%);
 }
 .form .user-inbox .msg-header p{
     color: #333;
@@ -143,8 +145,9 @@ html,body{
     opacity: 0;
     pointer-events: none;
     border-radius: 3px;
-    background: linear-gradient(to right, #ff7300, #ff3300);
-    border: 1px solid #ff3300;
+    /* background: linear-gradient(to right, #ff7300, #ff3300); */
+    background: #f92c8b;
+    border: 1px solid #ff4ac2;
     transform: translateY(-50%);
     transition: all 0.3s ease;
 }
@@ -153,7 +156,8 @@ html,body{
     pointer-events: auto;
 }
 .typing-field .input-data button:hover{
-    background: linear-gradient(to right, #ff3c00, #ff0000);
+    /* background: linear-gradient(to right, #ff3c00, #ff0000); */
+    background: #ff4ac2;
 }
 
 .chatCont {
@@ -195,4 +199,5 @@ html,body{
     font-weight: 100;
     color: white;
     margin-left: 88px;
+    
   }

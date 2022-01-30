@@ -1,0 +1,20 @@
+maquina: RED HAT COMPLETA
+https://utaedu-my.sharepoint.com/:u:/g/personal/eabril8611_uta_edu_ec/EYPDfFHJzXlFqeG7EZsDAhMB5qhSr-v4jXs0uhjTfqsnfw?e=N5jAuP
+
+U: root
+P: estefyar.1220
+
+phpMyAdmin:
+U: root
+P: 1234
+
+
+//Apuntes
+
+https://www.oscarperez.es/problemas-con-las-enes-acentos-y-demas-caracteres-cuando-usas-mysql-y-php/
+
+https://www.youtube.com/watch?v=fB6lbmu-mk0
+
+<script>
+    console.log(<?= json_encode($datoAjax); ?>)
+</script>
